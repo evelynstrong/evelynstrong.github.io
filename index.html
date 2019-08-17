@@ -1,22 +1,239 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <title>Evelyn Strong!</title>
-  </head>
-  <body>
-    <h1>Evelyn Strong Fundraiser!</h1>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <!-- timeline css -->
+  <style>
+    ul.timeline {
+      list-style-type: none;
+      position: relative;
+    }
+
+    ul.timeline:before {
+      content: " ";
+      background: #d4d9df;
+      display: inline-block;
+      position: absolute;
+      left: 29px;
+      width: 2px;
+      height: 100%;
+      z-index: 400;
+    }
+
+    ul.timeline>li {
+      margin: 20px 0;
+      padding-left: 20px;
+    }
+
+    ul.timeline>li:before {
+      content: " ";
+      background: white;
+      display: inline-block;
+      position: absolute;
+      border-radius: 50%;
+      border: 3px solid #22c0e8;
+      left: 20px;
+      width: 20px;
+      height: 20px;
+      z-index: 400;
+    }
+  </style>
+  <!-- end timeline css-->
+
+  <title>Fundraiser for Evelyn Allen</title>
+</head>
+
+<body>
+  <div class="container">
+    <div style="text-align: center;">
+      <h1 class="display-3">Fundraiser for Evelyn Allen</h1>
+      <span><i>Spaghetti Dinner & Silent Auction</i></span>
+    </div>
+    <hr />
+    <div class="row">
+      <!-- Start Left -->
+      <div class="col-md-4">
+        <img src="img/caring-bridge-evelyn.jpeg" class="card-img-top" alt="caringbridge" />
+
+        <br /><br />
+
+        <!-- Start Timeline -->
+        <h4>Evelyn's Story</h4>
+        <ul class="timeline">
+          <li>
+            <a target="_blank" href="#">Event 1</a>
+            <a href="#" class="float-right">March 1, 2018</a>
+            <p>
+              Text will go here
+            </p>
+          </li>
+          <li>
+            <a target="_blank" href="#">Event 2</a>
+            <a href="#" class="float-right">July 3, 2018</a>
+            <p>
+              Text will go here
+            </p>
+          </li>
+          <li>
+            <a target="_blank" href="#">Event 3</a>
+            <a href="#" class="float-right">August 12, 2018</a>
+            <p>
+              Text will go here
+            </p>
+          </li>
+        </ul>
+        <!-- End Timeline -->
+      </div>
+
+      <!-- End Left Image -->
+      <!-- Start Right Body -->
+      <div class="col-md-8">
+        <!-- Her Story -->
+        <div class="col-md-12" style="margin-bottom: 125px;">
+          <h2>--- Her Story ---</h2>
+          <p>
+            Story to be added later
+          </p>
+        </div>
+        <!-- End Her Story -->
+
+        <!-- Spagetti Dinner -->
+        <div class="col-md-12" style="margin-bottom: 125px;">
+          <h2>--- Spaghetti Dinner ---</h2>
+          <p>
+            <h3>Venue: </h3>
+            <div class="row">
+
+              <div class="col-md-4">
+                <b>Tacoma Association of Firefighters</b>
+                <br />
+                <i>1109 South 50th Street, Tacoma WA</i>
+              </div>
+              <div class="col-md-8">
+                <a href="https://www.google.com/maps/place/Tacoma+Fire+Fighters+Hall/@47.2120212,-122.4513349,17z/data=!3m1!4b1!4m5!3m4!1s0x5490ffe42dd92d0d:0xb55987c6d9b47a1c!8m2!3d47.2120176!4d-122.4491409"
+                  target="_blank">
+                  <img src="img/venue-map.png" style="height: 350px;" />
+                </a>
+              </div>
+            </div>
+          </p>
+        </div>
+        <!-- End Right Body -->
+      </div>
+
+      <!-- Tickets -->
+      <div class="container" style="margin-bottom: 25px;">
+        <div class="row">
+          <h3>Tickets</h3>
+        </div>
+        <div class="row">
+          <p>All proceeds go to Evelyn Allen in an effort to help ease the
+            financial burden cancer has placed on this beautiful family</p>
+        </div>
+      </div>
+
+      <div class="row" style="float: none; margin: 0 auto;">
+        <div class="col-md-4" style="width: 450px;">
+          <div class="card">
+            <div class="card-header">
+              Adults
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Adult Tickets</h5>
+              <p class="card-text">$25</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              Kids
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Kids Tickets</h5>
+              <p class="card-text">11 + Under free!</p>
+              <a href="#" class="btn btn-info">Free</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              Other
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Other tickets</h5>
+              <p class="card-text">Donations!</p>
+              <a href="#" class="btn btn-warning">You choose!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Tickets -->
+    </div>
+    <!-- End Spagetti Dinner -->
+
+    <br /><br /><br />
+    <!-- Raffle/Entertainment -->
+    <div class=" col-md-12" style="margin-bottom: 125px;">
+      <h2>--- Raffle/Entertainment ---</h2>
+      <p>
+        Several Auction Items will be available:
+        <ul>
+          <li>Sounders Package</li>
+          <li>Seahawks Basket</li>
+          <li>Other</li>
+        </ul>
+      </p>
+      <br /><br />
+      <p>
+        <div class="row">
+          <div class="col-md-4">
+            <br />
+            <img src="img/tjh-facebook.png" style="width: 150px;"><br />
+            <a href="https://www.facebook.com/TaylorJohnHardin/">Facebook</a><br />
+          </div>
+          <div class="col-md-8">
+            <p>Entertainment will be provided by Local Celebrity Taylor John Hardin</p>
+          </div>
+        </div>
+      </p>
+      <hr />
+      <p>
+        Additional donations can be made here: <a href="#">JJ's Link</a>
+      </p>
+    </div>
+    <!-- End Raffle/Entertainment -->
+
+
+    <p></p>
+    <div class="row">
+      <div class="col-md-12" style="border: 1px solid black;">
+        Additional text at bottom
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
