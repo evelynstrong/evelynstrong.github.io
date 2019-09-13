@@ -12,38 +12,41 @@
 
   <!-- timeline css -->
   <style>
-    ul.timeline {
-      list-style-type: none;
-      position: relative;
+    .ev-slides img {
+      object-fit: contain;
+      min-width: 100%;
+      height: 400px;
+      max-width: none;
     }
 
-    ul.timeline:before {
-      content: " ";
-      background: #d4d9df;
-      display: inline-block;
-      position: absolute;
-      left: 29px;
-      width: 2px;
-      height: 100%;
-      z-index: 400;
+
+
+    h1,
+    h2 {
+      color: purple;
+      text-align: center
     }
 
-    ul.timeline>li {
-      margin: 20px 0;
-      padding-left: 20px;
+    p {
+      color: #FF69B4;
+      text-align: center;
     }
 
-    ul.timeline>li:before {
-      content: " ";
-      background: white;
-      display: inline-block;
-      position: absolute;
-      border-radius: 50%;
-      border: 3px solid #22c0e8;
-      left: 20px;
-      width: 20px;
-      height: 20px;
-      z-index: 400;
+    li {
+      color: #FF69B4;
+    }
+
+    button {
+      margin: auto;
+      display: block;
+    }
+
+    .carousel-control-prev {
+      background: #dddddd
+    }
+
+    .carousel-control-next {
+      background: #dddddd
     }
   </style>
   <!-- end timeline css-->
@@ -52,188 +55,338 @@
 </head>
 
 <body>
+
   <div class="container">
-    <div style="text-align: center;">
-      <h1 class="display-3">Fundraiser for Evelyn Allen</h1>
-      <span><i>Spaghetti Dinner & Silent Auction</i></span>
-    </div>
-    <hr />
-    <div class="row">
-      <!-- Start Left -->
-      <div class="col-md-4">
-        <img src="img/caring-bridge-evelyn.jpeg" class="card-img-top" alt="caringbridge" />
-
-        <br /><br />
-
-        <!-- Start Timeline -->
-        <h4>Evelyn's Story</h4>
-        <ul class="timeline">
-          <li>
-            <a target="_blank" href="#">Event 1</a>
-            <a href="#" class="float-right">March 1, 2018</a>
-            <p>
-              Text will go here
-            </p>
-          </li>
-          <li>
-            <a target="_blank" href="#">Event 2</a>
-            <a href="#" class="float-right">July 3, 2018</a>
-            <p>
-              Text will go here
-            </p>
-          </li>
-          <li>
-            <a target="_blank" href="#">Event 3</a>
-            <a href="#" class="float-right">August 12, 2018</a>
-            <p>
-              Text will go here
-            </p>
-          </li>
-        </ul>
-        <!-- End Timeline -->
+    <div class="row" style="text-align: center;">
+      <div class="col-md-1">
+        <img src="img/gold_cancer_ribbon" style="max-height: 100px;" />
+      </div>
+      <div class="col-md-9" style="margin: auto; padding-left: 50px;">
+        <h1 class="display-4">Fundraiser for Evelyn Allen</h1>
+      </div>
+      <div class="col-md-1">
+        <img src="img/gold_cancer_ribbon" style="max-height: 100px;" />
       </div>
 
-      <!-- End Left Image -->
+    </div>
+  </div>
+  <hr />
+  <div class="ev-slides">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="img/caring-bridge-evelyn.jpeg" data-holder-rendered="true">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/ev1.jpg" data-holder-rendered="true">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/ev2" data-holder-rendered="true">
+        </div>
+        <div class=" carousel-item">
+          <img class="d-block w-100" src="img/ev3" data-holder-rendered="true">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/ev4" data-holder-rendered="true">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/ev5" data-holder-rendered="true">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/ev6" data-holder-rendered="true">
+        </div>
+        <div class=" carousel-item">
+          <img class="d-block w-100" src="img/ev7" data-holder-rendered="true">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/ev8" data-holder-rendered="true">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/ev9" data-holder-rendered="true">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/ev10" data-holder-rendered="true">
+        </div>
+        <div class=" carousel-item">
+          <img class="d-block w-100" src="img/ev11" data-holder-rendered="true">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/ev12" data-holder-rendered="true">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/ev13" data-holder-rendered="true">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/ev14" data-holder-rendered="true">
+        </div>
+        <div class=" carousel-item">
+          <img class="d-block w-100" src="img/ev15" data-holder-rendered="true">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/ev16" data-holder-rendered="true">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/ev17" data-holder-rendered="true">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
       <!-- Start Right Body -->
-      <div class="col-md-8">
+      <div class="col-md-12">
         <!-- Her Story -->
-        <div class="col-md-12" style="margin-bottom: 125px;">
-          <h2>--- Her Story ---</h2>
+        <div class="col-md-12" style="margin-bottom: 75px;">
+          <h2>Evelyn's Story</h2>
           <p>
-            Story to be added later
+            <blockquote class="blockquote blockquote-custom bg-white p-4 shadow rounded">
+              <div class="blockquote-custom-icon bg-info shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
+              <p class="mb-0 mt-2 font-italic">"Your children are the rainbow, but your grandchildren are the pots of
+                gold"</p>
+              <footer class="blockquote-footer" style="float: right">Sabra Tircuit</footer>
+            </blockquote><!-- END -->
+            <div class="ev-story" style="height: 410px; overflow-y: scroll;">
+              <p>Each one of them is precious beyond belief and unique in their own ways.</p>
+
+              <p>Evelyn Allen (aka Ev, Evvers, Evvy, Evs, The Evster, Ev-monster) is one of our precious pots of gold; a
+                true gift from God to the world. She is loving, determined, independent, funny, intelligent, beautiful,
+                and very much in charge.</p>
+
+              <p>Late in her 4th year, Evy began complaining of pain in her hips. Weeks passed as doctors worked to
+                determine the source, while all the while the pain continued to increase and Evvy’s mobility decreased.
+                On
+                March 26th, it was determined that Evvy had stage 4 Neuroblastoma. Neuroblastoma is a fairly rare form
+                of
+                cancer with about 800 cases diagnosed in US children each year. This cancer typically begins in the
+                adrenal glands with the high risk, stage 4 designation meaning that her cancer has spread. In our Evy’s
+                case, they found the main tumor in her right adrenal gland with additional tumors along herv spine. The
+                cancer was also found in her bone marrow. This was devastating news that caused tears to flow easily;
+                fear
+                for the future and what it might hold; and the overwhelming question of “why.”</p>
+
+              <p>During the next couple of weeks, the medical team and the support team (Team Evvy) were assembled and
+                put
+                their plans in place. The treatment plan was to last a grueling 18+ months and would involve six rounds
+                of
+                chemotherapy with approximately 3 weeks in between each round; bone marrow and stem cell extraction;
+                surgery to remove the tumors; reimplantation of bone marrow and stem cells; radiation; and immunotherapy
+                to name just a portion of what the future held. The support team plan was also extensive and included
+                everything from care for Ben (and Macy) to logistics; from work schedule modifications to food and
+                funding. All of these were important considerations but the main focus of “Team Evvy” was to ensure that
+                Evelyn, Benjamin, Stephanie and Dustin were thoroughly supported and would not walk this unwanted part
+                of
+                their journeys alone.</p>
+
+              <p>5 months have now passed since the Neuroblastoma diagnosis and great progress has been made both
+                medically
+                and mentally. The doctors are reporting that the plan is going well and are pleased so far with the
+                results.</p>
+
+              <p>We are so proud of Evvs and how she has handled herself and has braved the examinations, scans, tests,
+                transfusions, 6 rounds of Chemo, surgery, long stays in the hospital, ups, downs, hair and weight loss,
+                and pain. What once was a scared, small child keeping an eye on the hospital door wondering what the
+                next
+                nurse or doctor who passes through it might do to her, has now blossomed into a near-model patient. She
+                confidently struts into the Starfish ward on the 10th floor at Doernbecker children’s hospital and owns
+                the hearts of the Staff. She now takes and active role assisting with her own care; wears her
+                hearts/American flag inspired back brace faithfully; and helps Mom and Dad keep her Hickman Port (her
+                surgically implanted “tubies”) safe and clean. She has shown great endurance and fortitude and is very
+                inspirational.</p>
+
+
+              <p>We are also proud of Stephanie, Dustin and Benjamin. Their happy lives filled with their daily routines
+                and family outings were turned upside down on March 26th, 2019 and have been drastically altered ever
+                since. They have all sacrificed and done everything necessary to ensure Evs’ treatment stays on track
+                including learning all they can about this disease; questioning if the plan can be improved; countless
+                trips and stays at the hospital; giving shots and medication; monitoring Evvy’s vitals closely; and
+                altering work schedules. This type of situation can change people forever and sometimes the choice comes
+                down to sink or swim. They have all elected to swim and have shown great growth as individuals, and as a
+                family.</p>
+
+              <p>And you should all know we are “very” thankful for all the people who have offered support. In fact,
+                there
+                has been an absolute outpouring of support of all kinds. “Team Evvy” has swelled from a troop of family
+                and close friends to an army; many of whom do not even know her. We can’t begin to mention everyone, so
+                we
+                won’t attempt to. But please be assured that you are appreciated, and your acts of kindness and
+                generosity
+                will not be forgotten.</p>
+
+              <p>These acts have come in many forms including prayers; phone calls; visits; letters; donations of meals,
+                funds and gift cards; morale support and being there; chores; work vacation donations; gifts for Evy;
+                advice; sharing your own experiences; and skilled medical expertise and care. You have all helped to
+                provide Evelyn, Stephanie, Dustin and Benjamin with faith, hope and love for the journey forward. Thank
+                you from the bottom of our hearts.</p>
+
+              <p>Thankful and Blessed Grandparents</p>
+            </div>
           </p>
         </div>
         <!-- End Her Story -->
-
-        <!-- Spagetti Dinner -->
-        <div class="col-md-12" style="margin-bottom: 125px;">
-          <h2>--- Spaghetti Dinner ---</h2>
-          <p>
-            <h3>Venue: </h3>
-            <div class="row">
-
-              <div class="col-md-4">
-                <b>Tacoma Association of Firefighters</b>
-                <br />
-                <i>1109 South 50th Street, Tacoma WA</i>
-              </div>
-              <div class="col-md-8">
-                <a href="https://www.google.com/maps/place/Tacoma+Fire+Fighters+Hall/@47.2120212,-122.4513349,17z/data=!3m1!4b1!4m5!3m4!1s0x5490ffe42dd92d0d:0xb55987c6d9b47a1c!8m2!3d47.2120176!4d-122.4491409"
-                  target="_blank">
-                  <img src="img/venue-map.png" style="height: 350px;" />
-                </a>
-              </div>
-            </div>
-          </p>
-        </div>
         <!-- End Right Body -->
       </div>
 
-      <!-- Tickets -->
-      <div class="container" style="margin-bottom: 25px;">
-        <div class="row">
-          <h3>Tickets</h3>
+
+      <div class="col-md-12">
+        <div style="text-align: center">
+          <img src="img/auction.png" style="max-height: 400px;" />
         </div>
-        <div class="row">
-          <p>All proceeds go to Evelyn Allen in an effort to help ease the
-            financial burden cancer has placed on this beautiful family</p>
+        <div style="margin-top: 25px;">
+          <p><i>All proceeds go to Evelyn Allen in an effort to help ease the
+              financial burden cancer has placed on this beautiful family</i></p>
         </div>
       </div>
 
-      <div class="row" style="float: none; margin: 0 auto;">
-        <div class="col-md-4" style="width: 450px;">
-          <div class="card">
-            <div class="card-header">
-              Adults
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Adult Tickets</h5>
-              <p class="card-text">$25</p>
-              <a href="#" class="btn btn-primary">Buy</a>
-            </div>
-          </div>
+
+
+      <!-- Dinner -->
+      <div class="col-md-12" style="margin-top: 50px; padding: 25px;">
+        <h2>Dinner: $25 per person</h2>
+        <hr />
+        <p><i>(Children 11 and under are free)</i></p>
+        <p>Spaghetti, salad, garlic bread, and an array of desserts. Bottled water, iced tea, coffee, and lemonade. Beer
+          and wine will be available for additional donation at the venue.</p>
+      </div>
+      <!-- /Dinner -->
+
+      <!-- Silent Auction & Raffle -->
+      <div class="col-md-12" style="margin-top: 50px; padding: 25px;">
+        <h2>Silent Auction & Raffle</h2>
+        <hr />
+        <div style="text-align: center">
+          <img src="img/basket-logos.png" style="height: 250px;" />
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-header">
-              Kids
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Kids Tickets</h5>
-              <p class="card-text">11 + Under free!</p>
-              <a href="#" class="btn btn-info">Free</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-header">
-              Other
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Other tickets</h5>
-              <p class="card-text">Donations!</p>
-              <a href="#" class="btn btn-warning">You choose!</a>
-            </div>
-          </div>
+        <br /><br />
+        <p>There will be several auction items including a Seahawks basket as well as a
+          raffle for Sounders tickets + hotel.</p>
+        <p>(Cash or check only accepted at event.
+          <b>We will not have a way of accepting cards at the event)</b>
+        </p>
+      </div>
+      <!-- End Silent Auction & Raffle -->
+
+      <!-- Entertainment -->
+      <div class="col-md-12" style="margin-top: 50px; padding: 25px;">
+        <h2>Entertainment</h2>
+        <hr />
+        <p>Entertainment will be provided by Local Celebrity Taylor John Hardin</p>
+        <div style="text-align: center">
+          <a href="https://www.facebook.com/TaylorJohnHardin/">
+            <img src="img/taylor.jpg" style="height: 250px;" />
+          </a><br />
         </div>
       </div>
-      <!-- End Tickets -->
+      <!-- /Entertainment -->
+
+
+      <!-- Ticket Purchase -->
+      <div class="col-md-12" style="margin-top: 50px; padding: 25px;">
+        <h2>Ticket Purchase Instructions</h2>
+        <hr />
+        <ol style="margin-left: 30%;">
+          <li>Click donate button</li>
+          <li>Enter donation amount</li>
+          <li>Either Sign-in to paypal or enter credit card information</li>
+          <li>Enter name and number of tickets in Note section</li>
+          <li>Click Donate Now</li>
+        </ol>
+        <div style="text-align: center">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_donations" />
+            <input type="hidden" name="business" value="JZHSUAJSFVDB4" />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"
+              name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+          </form>
+          <!-- <button type="button" class="btn btn-info">Donate</button> -->
+        </div>
+        <br /><br /><br />
+        <p>Unable to attend? That's okay! Any donations are greatly appreciated!</p>
+        <div style="text-align: center">
+          <!-- <button type="button" class="btn btn-info">Donate</button> -->
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_donations" />
+            <input type="hidden" name="business" value="JZHSUAJSFVDB4" />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"
+              name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+          </form>
+        </div>
+      </div>
+      <!-- /Ticket Purchase -->
+
+      <!-- Directions / Map -->
+      <div class="container" style="padding: 50px;">
+        <h3>Venue Details</h3>
+        <hr />
+        <div class="row">
+          <div class="col-md-6">
+            <p>This event is happening at the Tacoma Association of Firefighers, Tacoma, WA.</p>
+            <div class="contact-info" style="text-align: left !important;">
+              <div class="contact-info-box">
+                <i class="fa fa-map-marker">&nbsp;</i>
+                <div class="contact-info-box-content">
+                  <h4>Address: </h4>
+                  <p>1109 South 50th Street, Tacoma WA</p>
+                </div>
+              </div>
+              <div class="contact-info-box">
+                <i class="fa fa-envelope-o">&nbsp;</i>
+                <div class="contact-info-box-content">
+                  <h4>Email: </h4>
+                  <p>evelynstrongfundraiser@gmail.com</p>
+                </div>
+              </div>
+              <br />
+              <div class="contact-info-box">
+                <div class="contact-info-box-content">
+                  <h4>Directions: </h4>
+                  <p>Please click on the map to
+                    get directions</p>
+                </div>
+              </div>
+            </div>
+            <!-- contact info end -->
+          </div>
+          <!-- Col end -->
+          <div class="col-md-6">
+            <a href="https://www.google.com/maps/place/Tacoma+Fire+Fighters+Hall/@47.2120212,-122.4513349,17z/data=!3m1!4b1!4m5!3m4!1s0x5490ffe42dd92d0d:0xb55987c6d9b47a1c!8m2!3d47.2120176!4d-122.4491409"
+              target="_blank">
+              <img src="img/venue-map.png" style="max-height:100%; max-width:100%;" />
+            </a>
+          </div>
+          <!-- Col end -->
+        </div>
+        <!-- Content row end -->
+      </div>
+
     </div>
     <!-- End Spagetti Dinner -->
 
     <br /><br /><br />
-    <!-- Raffle/Entertainment -->
-    <div class=" col-md-12" style="margin-bottom: 125px;">
-      <h2>--- Raffle/Entertainment ---</h2>
-      <p>
-        Several Auction Items will be available:
-        <ul>
-          <li>Sounders Package</li>
-          <li>Seahawks Basket</li>
-          <li>Other</li>
-        </ul>
-      </p>
-      <br /><br />
-      <p>
-        <div class="row">
-          <div class="col-md-4">
-            <br />
-            <img src="img/tjh-facebook.png" style="width: 150px;"><br />
-            <a href="https://www.facebook.com/TaylorJohnHardin/">Facebook</a><br />
-          </div>
-          <div class="col-md-8">
-            <p>Entertainment will be provided by Local Celebrity Taylor John Hardin</p>
-          </div>
-        </div>
-      </p>
-      <hr />
-      <p>
-        Additional donations can be made here: <a href="#">JJ's Link</a>
-      </p>
-    </div>
-    <!-- End Raffle/Entertainment -->
 
-
-    <p></p>
-    <div class="row">
-      <div class="col-md-12" style="border: 1px solid black;">
-        Additional text at bottom
-      </div>
-    </div>
-  </div>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
